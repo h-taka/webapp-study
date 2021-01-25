@@ -1,2 +1,2 @@
 # webapp-study
-description
+実践Webアプリケーション開発用のテンプレートプロジェクト
