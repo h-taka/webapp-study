@@ -30,6 +30,7 @@ public class UserEntryResultServlet extends HttpServlet {
                 request.setAttribute("userrecord", record);
                 request.setAttribute("errormessages", record.getErrorMessages());
                 getServletContext().getRequestDispatcher("/view/user/userentryform.jsp").forward(request, response);
+                return;
             }
             
             UserDao dao = new UserDao();

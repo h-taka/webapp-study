@@ -32,6 +32,7 @@ public class UserUpdateResultServlet extends HttpServlet {
                 request.setAttribute("userrecord", record);
                 request.setAttribute("errormessages", record.getErrorMessages());
                 getServletContext().getRequestDispatcher("/view/user/userupdateform.jsp").forward(request, response);
+                return;
             }
 
             UserDao dao = new UserDao();
